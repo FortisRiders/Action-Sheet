@@ -6,23 +6,13 @@
 //  Copyright (c) 2012 kezzi.co. All rights reserved.
 //
 
-#import "ActionSheet.h"
+#import "LIActionSheet.h"
 
-@implementation ActionSheet
-
-- (void) dealloc {
-  if(_visible == YES) [self release];
-  [_content release];
-  [_contentView release];
-  [_sheetView release];
-  [_shadowView release];
-  [_view release];
-  [super dealloc];
-}
+@implementation LIActionSheet
 
 - (id) init {
   if(self = [super init]) {
-    [[NSBundle mainBundle] loadNibNamed:@"ActionSheet" owner:self options:nil];
+    [[NSBundle mainBundle] loadNibNamed:@"LIActionSheet" owner:self options:nil];
     _sheetHeight = self.sheetView.frame.size.height;
   }
   return self;
@@ -30,7 +20,6 @@
 
 - (void) showContent:(UIView *) content inView:(UIView *) view {
   if(_visible == YES) return;
-  [self retain];
   _visible = YES;
   
   [self.contentView addSubview: content];
@@ -65,7 +54,6 @@
     if(complete == NO) return;
     [self clearContent];
     [self.view removeFromSuperview];
-    [self autorelease];
   }];
   
 }

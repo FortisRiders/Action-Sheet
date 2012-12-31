@@ -32,8 +32,8 @@
 		9B07854E1679935F00BA6AD1 /* actionSheetDarkness.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B0785481679935F00BA6AD1 /* actionSheetDarkness.png */; };
 		9B07854F1679935F00BA6AD1 /* actionSheetDarkness@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B0785491679935F00BA6AD1 /* actionSheetDarkness@2x.png */; };
 		9B078551167993B100BA6AD1 /* ExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B078550167993B000BA6AD1 /* ExampleViewController.xib */; };
-		9B0785521679951900BA6AD1 /* ActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B07852E167992E800BA6AD1 /* ActionSheet.m */; };
-		9B078553167995A100BA6AD1 /* ActionSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B07852F167992E800BA6AD1 /* ActionSheet.xib */; };
+		9B0785521679951900BA6AD1 /* LIActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B07852E167992E800BA6AD1 /* LIActionSheet.m */; };
+		9B078553167995A100BA6AD1 /* LIActionSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B07852F167992E800BA6AD1 /* LIActionSheet.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,9 +50,9 @@
 		9B0785221679928D00BA6AD1 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		9B0785241679928D00BA6AD1 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		9B0785261679928D00BA6AD1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		9B07852D167992E800BA6AD1 /* ActionSheet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActionSheet.h; sourceTree = "<group>"; };
-		9B07852E167992E800BA6AD1 /* ActionSheet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActionSheet.m; sourceTree = "<group>"; };
-		9B07852F167992E800BA6AD1 /* ActionSheet.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActionSheet.xib; sourceTree = "<group>"; };
+		9B07852D167992E800BA6AD1 /* LIActionSheet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LIActionSheet.h; sourceTree = "<group>"; };
+		9B07852E167992E800BA6AD1 /* LIActionSheet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LIActionSheet.m; sourceTree = "<group>"; };
+		9B07852F167992E800BA6AD1 /* LIActionSheet.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LIActionSheet.xib; sourceTree = "<group>"; };
 		9B078530167992F900BA6AD1 /* ExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleViewController.h; sourceTree = "<group>"; };
 		9B078531167992F900BA6AD1 /* ExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleViewController.m; sourceTree = "<group>"; };
 		9B0785341679932F00BA6AD1 /* copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = copy.png; sourceTree = "<group>"; };
@@ -118,9 +118,9 @@
 			children = (
 				9B0785331679930800BA6AD1 /* Resources */,
 				9B0785171679928D00BA6AD1 /* Supporting Files */,
-				9B07852D167992E800BA6AD1 /* ActionSheet.h */,
-				9B07852E167992E800BA6AD1 /* ActionSheet.m */,
-				9B07852F167992E800BA6AD1 /* ActionSheet.xib */,
+				9B07852D167992E800BA6AD1 /* LIActionSheet.h */,
+				9B07852E167992E800BA6AD1 /* LIActionSheet.m */,
+				9B07852F167992E800BA6AD1 /* LIActionSheet.xib */,
 				9B078530167992F900BA6AD1 /* ExampleViewController.h */,
 				9B078531167992F900BA6AD1 /* ExampleViewController.m */,
 				9B078550167993B000BA6AD1 /* ExampleViewController.xib */,
@@ -235,7 +235,7 @@
 				9B07854E1679935F00BA6AD1 /* actionSheetDarkness.png in Resources */,
 				9B07854F1679935F00BA6AD1 /* actionSheetDarkness@2x.png in Resources */,
 				9B078551167993B100BA6AD1 /* ExampleViewController.xib in Resources */,
-				9B078553167995A100BA6AD1 /* ActionSheet.xib in Resources */,
+				9B078553167995A100BA6AD1 /* LIActionSheet.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,7 +249,7 @@
 				9B07851D1679928D00BA6AD1 /* main.m in Sources */,
 				9B0785211679928D00BA6AD1 /* AppDelegate.m in Sources */,
 				9B078532167992F900BA6AD1 /* ExampleViewController.m in Sources */,
-				9B0785521679951900BA6AD1 /* ActionSheet.m in Sources */,
+				9B0785521679951900BA6AD1 /* LIActionSheet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +318,7 @@
 		9B07852B1679928D00BA6AD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ActionSheet/ActionSheet-Prefix.pch";
 				INFOPLIST_FILE = "ActionSheet/ActionSheet-Info.plist";
@@ -329,6 +330,7 @@
 		9B07852C1679928D00BA6AD1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ActionSheet/ActionSheet-Prefix.pch";
 				INFOPLIST_FILE = "ActionSheet/ActionSheet-Info.plist";
@@ -356,6 +358,7 @@
 				9B07852C1679928D00BA6AD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

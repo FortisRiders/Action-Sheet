@@ -7,17 +7,13 @@
 //
 
 #import "ExampleViewController.h"
-#import "ActionSheet.h"
+#import "LIActionSheet.h"
 
 @implementation ExampleViewController
 
-- (void)dealloc {
-  [_actionsView release];
-  [super dealloc];
-}
 
 - (IBAction)actionTouched:(id)sender {
-  ActionSheet *sheet = [[[ActionSheet alloc] init] autorelease];
+  LIActionSheet *sheet = [[LIActionSheet alloc] init];
   [sheet showContent: self.actionsView inView: self.view];
 }
 

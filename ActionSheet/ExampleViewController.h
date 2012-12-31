@@ -8,5 +8,5 @@
 
 #import <UIKit/UIKit.h>
 @interface ExampleViewController : UIViewController
-@property (retain, nonatomic) IBOutlet UIView *actionsView;
+@property (strong, nonatomic) IBOutlet UIView *actionsView;
 @end
