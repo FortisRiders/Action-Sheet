@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage     = 'https://github.com/jcoleman/Action-Sheet'
   s.author       = { 'Lee Irvine' => 'loofy2@gmail.com' }
   s.requires_arc = true
-  s.source       = { :git => 'https://github.com/jcoleman/Action-Sheet.git', :commit => :head }
+  s.source       = { :git => 'https://github.com/jcoleman/Action-Sheet.git' }
   s.source_files = 'ActionSheet/LIActionSheet.{h,m}'
   s.resources    = ['ActionSheet/LIActionSheet.xib', 'ActionSheet/actionSheetCancel{.png,@2x.png}', 'ActionSheet/actionSheetCancelDown{.png,@2x.png}', 'ActionSheet/actionSheetDarkness{.png,@2x.png}']
 end
